@@ -1,0 +1,31 @@
+2026-04-16 21:41:14,448 DEBUG cd frappe-bench && uv venv env --seed --python /opt/homebrew/opt/python@3.11/bin/python3.11
+2026-04-16 21:41:15,848 LOG Getting frappe
+2026-04-16 21:41:15,848 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-04-16 21:41:29,484 LOG Installing frappe
+2026-04-16 21:41:29,486 DEBUG cd /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench && uv pip install  --upgrade -e /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/apps/frappe  --python /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/env/bin/python
+2026-04-16 21:41:32,507 DEBUG cd /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/apps/frappe && yarn install --check-files --verbose
+2026-04-16 21:41:47,863 DEBUG cd frappe-bench && bench build
+2026-04-16 21:41:48,036 INFO /Users/vineethpakideri/.local/bin/bench build
+2026-04-16 21:42:05,758 LOG setting up backups
+2026-04-16 21:42:05,772 LOG backups were set up
+2026-04-16 21:42:05,772 INFO Bench frappe-bench initialized
+2026-04-16 22:47:42,844 INFO /Users/vineethpakideri/.local/bin/bench get-app erpnext --branch version-15
+2026-04-16 22:47:45,753 LOG Getting erpnext
+2026-04-16 22:47:45,753 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2026-04-16 22:48:00,640 LOG Installing erpnext
+2026-04-16 22:48:00,642 DEBUG cd /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench && uv pip install --quiet --upgrade -e /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/apps/erpnext  --python /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/env/bin/python
+2026-04-16 22:48:14,118 DEBUG cd /Users/vineethpakideri/Documents/erpnext/erp-projects/frappe-bench/apps/erpnext && yarn install --check-files
+2026-04-16 22:48:16,176 DEBUG bench build --app erpnext
+2026-04-16 22:48:16,346 INFO /Users/vineethpakideri/.local/bin/bench build --app erpnext
+2026-04-16 22:48:16,381 WARNING bench build --app erpnext executed with exit code 1
+2026-04-16 22:48:16,382 WARNING /Users/vineethpakideri/.local/bin/bench get-app erpnext --branch version-15 executed with exit code 1
+2026-04-16 22:50:33,863 INFO /Users/vineethpakideri/.local/bin/bench build --app erpnext
+2026-04-16 23:01:14,055 INFO /Users/vineethpakideri/.local/bin/bench build --app erpnext
+2026-04-16 23:02:24,905 INFO /Users/vineethpakideri/.local/bin/bench new-site site1.local --admin-password admin --db-root-password 
+2026-04-16 23:04:23,357 INFO /Users/vineethpakideri/.local/bin/bench --site site1.local install-app erpnext
+2026-04-16 23:06:10,806 INFO /Users/vineethpakideri/.local/bin/bench use site1.local
+2026-04-16 23:07:19,841 INFO /Users/vineethpakideri/.local/bin/bench start
+2026-04-16 23:07:21,075 INFO /Users/vineethpakideri/.local/bin/bench serve --port 8000
+2026-04-16 23:07:21,080 INFO /Users/vineethpakideri/.local/bin/bench schedule
+2026-04-16 23:07:21,084 INFO /Users/vineethpakideri/.local/bin/bench watch
+2026-04-16 23:07:21,097 INFO /Users/vineethpakideri/.local/bin/bench worker
